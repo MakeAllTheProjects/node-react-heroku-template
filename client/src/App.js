@@ -23,12 +23,12 @@ const welcomeReducer = (state, action) => {
         loading: false,
         message: 'Something went wrong!'
       }
-    default: 
+    default:
       return state
   }
 }
 
-function App () {
+function App() {
   const [welcomeState, welcomeDispatch] = useReducer(welcomeReducer, initialWelcomeState)
 
   useEffect(() => {
@@ -48,7 +48,7 @@ function App () {
   }, [])
 
   return (
-    <div className="App">
+    <div className="app">
       App
       <GlobalContext.Provider
         value={{
@@ -57,7 +57,7 @@ function App () {
         }}
       >
         <MessageBanner />
-      </GlobalContext.Provider>      
+      </GlobalContext.Provider>
     </div>
   )
 }

@@ -5,7 +5,7 @@
 These instruction assume you have already started a Heroku app to host this project on.
 
 1. Create `.env` file with the following variables:
-	* `PORT=` *port number to use for local dev env*
+	* `PORT=8080` 
 	* `HEROKU_URL=` *heroku app url*
 
 2. ```yarn install```
@@ -18,4 +18,4 @@ These instruction assume you have already started a Heroku app to host this proj
 
 *If you have set up successfully localhost:3000 should have a blue banner that reads **hello world**.*
 
-This template uses a simple express server with a React frontend. The state management in the example is hooks based. If you are using this for a larger app I recommend moving the reducer(s) to their own file.
+This template uses a simple express server with a React frontend using SCSS. The state management in the example is hooks based. If you are using this for a larger app I recommend moving the reducer(s) to their own file.
